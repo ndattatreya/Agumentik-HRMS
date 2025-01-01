@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.s1 {
+    padding: 0;
+    width: 0;
+}
+
+.sidebar {
+    width: 20%;
+    height: 100%;
+    margin-top: 4%;
+    position: fixed;
+    float: left;
+    flex-direction: column;
+    overflow-y: auto;
+    border-top: 0;
+    border: 2px solid white;
+    scrollbar-width: none;
+    background-color: #f9fbfd;
+    transition: width 0.3s;
+}
+
+#hr a,
+#Project a,
+#layout a {
+    text-decoration: none;
+    color: black;
+}
+
+.collapsed {
+    width: 80px;
+}
+
+.headering {
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.menu .hr {
+    display: none;
+}
+
+.menu .project {
+    display: block;
+}
+
+.user-info {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+.bold {
+    font-weight: bold;
+    margin: 0;
+}
+
+.user-img {
+    height: 50px;
+    width: 50px;
+    border-radius: 25%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+
+.user-name {
+    display: flex;
+    margin: 10px;
+    gap: 15px;
+    border-bottom: #e1e1e1 solid 1px;
+}
+
+.cont {
+    margin-top: 2%;
+}
+
+.cont p {
+    text-align: left;
+}
+
+.cont button {
+    background-color: #f9fbfd;
+    border: none;
+    text-align: left;
+    align-items: left;
+    color: none;
+}
+
+ul .emp {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.emp li {
+    list-style: none;
+    padding: 3% 16%;
+}
+
+.user-content {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-left: 30px;
+    column-gap: 30px;
+    border-bottom-width: 1px;
+    border-color: #989898;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.text {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.margin {
+    margin-top: 2px;
+}
+
+.tex {
+    color: #989898;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.toggle-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.menu {
+    padding: 10px;
+    float: left;
+}
+
+.menu .mainbutt {
+    list-style: none;
+    display: inline-flex;
+    flex-direction: row;
+    padding: 8px;
+    margin-left: 36px;
+    gap: 96px;
+}
+
+.menu .mainbutt li{
+    border: 2px solid white;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 15px;
+    column-gap: 5%;
+    flex: 1;
+    margin-bottom: 2%;
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.menu-item:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdown-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-menu li {
+    padding: 0px 20px;
+    background-color: #f8f9fa;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-menu li:hover {
+    background-color: #e0e0e0;
+}
+
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+.i {
+    color: gray;
+    width: 15px;
+    height: 15px;
+}
+
+.i:hover {
+    color: black;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #49c5b6;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #49c5b6;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.checkmark {
+    background-color: #989898;
+    border-radius: 100rem;
+    cursor: pointer;
+    display: block;
+    height: 20px;
+    position: relative;
+    transition: all .3s ease-in-out;
+    width: 40px;
+}
+
+.checkmark::before {
+    background: #fff;
+    background: white;
+    border-radius: 50%;
+    content: "";
+    display: block;
+    height: 14px;
+    left: 4px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all .3s ease-in-out;
+    width: 14px;
+}
+
+.sidebar.expanded {
+    width: 270px;
+    margin-top: 3.8%;
+    transition: width 0.3s;
+}
+
+.sidebar.collapsed {
+    width: 3px;
+}
+
+.sidebar-toggle {
+    margin-top: 2vw;
+    background-color: #f9fbfd;
+    border: none;
+}

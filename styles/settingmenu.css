@@ -1,0 +1,74 @@
+.settings-menu {
+    width: 83%;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .theme-option,
+  .choose-skin,
+  .general-settings {
+    margin-bottom: 20px;
+  }
+  
+  .theme-option label,
+  .general-settings label {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .choose-skin p,
+  .general-settings p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .skins {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .skin {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .skin.selected {
+    border-color: #007bff;
+    background-color: #e9ecef;
+  }
+  
+  .skin span:first-child {
+    flex-grow: 1;
+  }
+  
+  .checkmark {
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .skin.purple { background-color: #a29bfe; }
+  .skin.blue { background-color: #74b9ff; }
+  .skin.cyan { background-color: #81ecec; }
+  .skin.green { background-color: #55efc4; }
+  .skin.orange { background-color: #fab1a0; }
+  .skin.blush { background-color: #ffcccc; }
+  
+  .setting-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .setting-option input {
+    margin-right: 10px;
+  }
+  
