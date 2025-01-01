@@ -1,0 +1,93 @@
+.project-table-container {
+  padding: 20px;
+  background-color: #f8f9fa;
+  margin-left: 20%;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.head h2 {
+  margin-left: 0%;
+}
+
+.search-bar {
+  display: flex;
+  gap: 10px;
+}
+
+.search-bar input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.clear-button {
+  padding: 8px 16px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+}
+
+.progress {
+  height: 10px;
+  background-color: #4caf50;
+  border-radius: 4px;
+}
+
+.status {
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.inactive {
+  background-color: #f44336;
+  color: white;
+}
+
+.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+.pending {
+  background-color: #ff9800;
+  color: white;
+}
+
+.closed {
+  background-color: #9e9e9e;
+  color: white;
+}
+
+.action-button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+} 
